@@ -1,0 +1,35 @@
+img{
+    width: 80px; height: 60px;
+}
+.log{
+    display: flex;
+    align-items: center;
+    background-color:aquamarine;
+    justify-content: center;
+    color: white;
+}
+.nav ul,li,a{
+    text-align: right;
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+    text-decoration:none ;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.bg{
+    background-image:url('hospital.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 2s ease;
+    animation:bgchange 20s infinite;
+}
+
+@keyframes bgchange{
+    20% {background-image:url('hospital.jpg');}
+    33% {background-image:url('sis.jpg');}
+    66%{background-image:url('doctor.jpg');}
+   100% {background-image:url('boy.jpg');}
+}
